@@ -7,7 +7,14 @@ int main()
   int s=s1.length(),r=s2.length();
   if(s==r)
   { cout<<"strings are isomorphic";
-  } else{ cout<<"strings are not isomorphic";}
+   {
+     cout<<"yes";
+   }
+  } else{ cout<<"strings are not isomorphic";
+         {
+           cout<<"no";
+        }
+        }
   return 0;
   }
  
