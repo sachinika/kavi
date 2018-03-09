@@ -2,17 +2,17 @@
 using namespace std;
 void buildLowestNumberRec(string str, int n, string &res)
 {
-      if (n == 0)
+      if (n==0)
     {
         res.append(str);
         return;
     }
     int len = str.length();
-       if (len <= n)
+       if (len<=n)
         return;
        int minIndex = 0;
-    for (int i = 1; i<=n ; i++)
-        if (str[i] < str[minIndex])
+    for (int i=1;i<=n;i++)
+        if (str[i]<str[minIndex])
             minIndex = i;
         res.push_back(str[minIndex]);
      string new_str = str.substr(minIndex+1, len-minIndex);
@@ -29,7 +29,7 @@ int main()
     string str ;
     cout<<"enter str";
     cin>>str;
-    int n = 2;
+    int n=3;
     cout << buildLowestNumber(str, n);
     return 0;
 }
