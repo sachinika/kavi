@@ -8,9 +8,9 @@ strcpy(b,a)
 strrev(a)
 if(strcmp(a,b)=0)
 {
-printf("\n palindrome");
+printf("\n palindrome",yes);
 else
-printf('\n not a palindrome");
+printf('\n not a palindrome",no);
 }
 return 0;
 }
